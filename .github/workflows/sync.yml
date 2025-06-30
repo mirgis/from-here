@@ -2,9 +2,10 @@ name: Sync posts to main site
 
 on:
   push:
-    - "_posts/**"
-  branches:
-    - main
+    paths:
+      - '_posts/**'
+    branches:
+      - main
 
 jobs:
   sync:
